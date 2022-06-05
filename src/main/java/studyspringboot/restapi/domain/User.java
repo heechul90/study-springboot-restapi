@@ -1,6 +1,7 @@
 package studyspringboot.restapi.domain;
 
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -31,6 +32,7 @@ public class User {
     private String updatedBy;
 
     //===생성 메서드===//
+    @Builder
     public User(String account, String email, String phoneNumber, LocalDateTime createdAt, String createdBy, LocalDateTime updatedAt, String updatedBy) {
         this.account = account;
         this.email = email;
@@ -39,5 +41,10 @@ public class User {
         this.createdBy = createdBy;
         this.updatedAt = updatedAt;
         this.updatedBy = updatedBy;
+    }
+
+    //===변경 메서드===//
+    public void changeEmail(String email) {
+        this.email = email;
     }
 }
