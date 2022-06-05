@@ -4,8 +4,6 @@ import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import studyspringboot.restapi.core.orderDetail.domain.OrderDetail;
-import studyspringboot.restapi.core.user.domain.User;
 
 import javax.persistence.*;
 
