@@ -1,4 +1,4 @@
-package studyspringboot.restapi.domain;
+package studyspringboot.restapi.core.user.domain;
 
 import lombok.AccessLevel;
 import lombok.Builder;

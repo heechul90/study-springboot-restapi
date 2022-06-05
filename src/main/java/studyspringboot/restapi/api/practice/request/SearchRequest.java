@@ -1,11 +1,11 @@
-package studyspringboot.restapi.dto;
+package studyspringboot.restapi.api.practice.request;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class SearchParamDto {
+public class SearchRequest {
 
     private String account;
     private String email;

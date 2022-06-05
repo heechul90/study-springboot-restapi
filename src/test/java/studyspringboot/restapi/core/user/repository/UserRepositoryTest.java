@@ -1,10 +1,11 @@
-package studyspringboot.restapi.repository;
+package studyspringboot.restapi.core.user.repository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.transaction.annotation.Transactional;
-import studyspringboot.restapi.domain.User;
+import studyspringboot.restapi.core.user.domain.User;
+import studyspringboot.restapi.core.user.repository.UserRepository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

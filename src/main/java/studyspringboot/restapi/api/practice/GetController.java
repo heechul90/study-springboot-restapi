@@ -1,11 +1,11 @@
-package studyspringboot.restapi.controller;
+package studyspringboot.restapi.api.practice;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import studyspringboot.restapi.dto.SearchParamDto;
+import studyspringboot.restapi.api.practice.request.SearchRequest;
 
 @Slf4j
 @RestController
@@ -24,8 +24,8 @@ public class GetController {
     }
 
     @GetMapping(value = "/multi-param")
-    public SearchParamDto getMultiParam(SearchParamDto dto) {
-        log.info("accout = {}, email = {}, page = {}", dto.getAccount(), dto.getEmail(), dto.getPage());
-        return dto;
+    public SearchRequest getMultiParam(SearchRequest request) {
+        log.info("accout = {}, email = {}, page = {}", request.getAccount(), request.getEmail(), request.getPage());
+        return request;
     }
 }
